@@ -14,7 +14,7 @@
     "debug": "~4.0.1",
     "express": "~4.16.3",
     "htmlcoind-rpc": "0.0.5",
-    "popper.js": "^1.14.3",
+    "popper.js": "^1.14.4",
     "jquery": "^1.9.1",
     "less": "3.8.1",
     "less-middleware": "~3.0.1",
