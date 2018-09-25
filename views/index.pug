@@ -10,7 +10,7 @@ block content
  if message
   p.bg-success.greybox= message
  else
-  p Enter your TestNet wallet address and click 'Get Bit' to get some htmlcoin
+  p Enter your TestNet wallet address and click 'Get Html' to get some htmlcoin
  div.jumbotron
   form(method="POST", action="/")
    input(type="hidden", name="_method", value="POST")
@@ -20,7 +20,7 @@ block content
     input.form-control(type="number", step="any", name="pour_amount", max="#{bit_limit}", min="0")
     h6 (You can withdrawl up to #{bit_limit}btc per request)
    p
-    button.btn.btn-large.btn-success(type="submit") Get Bit
+    button.btn.btn-large.btn-success(type="submit") Get Html
    p
  hr
  p To give back to the faucet, please send your coins to the following address
