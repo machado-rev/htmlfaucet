@@ -15,8 +15,16 @@ var app = express();
 var mongoose = require('mongoose');
 var db = mongoose.connection;
 
-var bitcoin = require('bitcoin');
-var btcClient = new bitcoin.Client(config.bitcoin);
+ var configura = {
+    protocol: 'http',
+    user: 'leandro',
+    pass: '260023',
+    host: '127.0.0.1',
+    port: '4889',
+  };
+
+var RpcClient = require('htmlcoind-rpc');
+var btcClient = new RpcClient(configura);
 
 db.on('error', console.error);
 db.once('open', function() {
@@ -27,7 +35,7 @@ mongoose.connect('mongodb://localhost:27017/faucet');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));

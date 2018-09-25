@@ -1,8 +1,18 @@
 var mongoose = require('mongoose');
 var Pour = require('../models/pour');
-var bitcoin = require('bitcoin-core');
+var configura = {
+    protocol: 'http',
+    user: 'leandro',
+    pass: '260023',
+    host: '127.0.0.1',
+    port: '4889',
+  };
+
+var RpcClient = require('htmlcoind-rpc');
+var btcClient = new RpcClient(configura);
+var RpcClient = require('htmlcoind-rpc');
 var config = require('../config/defaults.js');
-var btcClient = new bitcoin.Client(config.bitcoin);
+var btcClient = new RpcClient(configura);
 var qr = require('qr-image');
 var fs = require('fs');
 //var code = qr.image(config.faucet_address.toString(), { type: 'svg' });
@@ -13,7 +23,7 @@ module.exports.controller = function(app) {
     btcBalance = parseFloat('0.00000000')
     btcClient.getBalance('*', 1, function(err, balance, resHeaders) {
       if (err) {
-        return console.log("Error getting balance from bitcoind wallet - "+err);
+        return console.log("Error getting balance from htmlcoind wallet - "+err);
       }
       btcBalance = parseFloat(balance);
       console.log('Balance:', btcBalance);

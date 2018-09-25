@@ -6,14 +6,14 @@ var config = {
       host: 'localhost',
       port: 27017
     },
-    bitcoin: {
+    htmlcoin: {
       host: '127.0.0.1',
-      port: 14889,
+      port: 4889,
       user: 'leandro',
       pass: 'leandro260023',
       timeout: 30000
     },
-    faucet_address: 'hcPtkDLqAumUYBY4roPbt8purW6AaEYSh3',
+    faucet_address: 'hNA7ViXRD3NzF8nZsbzNiQvWYaGMoGMHbZ',
     bit_limit: '5.0'
   },
   staging: {
