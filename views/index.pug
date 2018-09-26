@@ -18,14 +18,14 @@ block content
     input.form-control(type="text", name="wallet_address")
    p.lead Amount&nbsp
     input.form-control(type="number", step="any", name="pour_amount", max="#{bit_limit}", min="0")
-    h6 (You can withdrawl up to #{bit_limit}btc per request)
+    h6 (You can withdrawl up to #{bit_limit} HTML per request)
    p
     button.btn.btn-large.btn-success(type="submit") Get Html
    p
  hr
  p To give back to the faucet, please send your coins to the following address
- //-img(src='/images/wallet_qr.svg')
- p.bg-info.greybox= faucet_address
+ img(src='/images/qr-code.png')
+ p hV8rdryrzjV6s6LXDg6ZHRbv91GvsKxKrw
  hr
  .footer
   p Htmlcoin Foundation 2018

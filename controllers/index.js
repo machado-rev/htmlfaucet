@@ -28,7 +28,7 @@ module.exports.controller = function(app) {
       console.log('Balance:', btcBalance);
       Pour.find( function(err, pours) {
         if (err) return console.log("Error getting pours...");
-        res.render('index', {pours: pours, pour_amount: req.body.pour_amount, balance: btcBalance, faucet_address: config.faucet_address, bit_limit: config.bit_limit, net_name: config.name});
+        res.render('index', {pours: pours, pour_amount: req.body.pour_amount, balance: btcBalance, faucet_address: config.faucet_address, bit_limit: 5000, net_name: config.name});
       });
     });
   });
@@ -36,8 +36,8 @@ module.exports.controller = function(app) {
   app.post('/', function(req, res) {
     // TODO: add constraint for pour frequency and amount
     console.log("User with IP " + req.connection.remoteAddress + " has poured " + req.body.pour_amount + " to address " + req.body.wallet_address);
-    console.log("req.body.pour_amount: " + req.body.pour_amount + " config.bit_limit: " + config.bit_limit);
-    if (req.body.pour_amount <= config.bit_limit) {
+    console.log("req.body.pour_amount: " + req.body.pour_amount + " config.bit_limit: " + 5000);
+    if (req.body.pour_amount <= 5000) {
       btcClient.sendToAddress(req.body.wallet_address, parseFloat(req.body.pour_amount), function(err, txid) {
         if (err) return console.error(err);
         var pour = new Pour({
