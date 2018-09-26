@@ -23,7 +23,7 @@ var db = mongoose.connection;
     port: '4889',
   };
 
-var RpcClient = require('htmlcoind-rpc');
+var RpcClient = require('bitcoin-core');
 var btcClient = new RpcClient(configura);
 
 db.on('error', console.error);

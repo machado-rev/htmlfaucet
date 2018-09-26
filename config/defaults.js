@@ -1,7 +1,7 @@
 var config = {
   local: {
     mode: 'local',
-    port: 3000,
+    port: 8090,
     mongo: {
       host: 'localhost',
       port: 27017
@@ -10,7 +10,7 @@ var config = {
       host: '127.0.0.1',
       port: 4889,
       user: 'leandro',
-      pass: 'leandro260023',
+      pass: '260023',
       timeout: 30000
     },
     faucet_address: 'hNA7ViXRD3NzF8nZsbzNiQvWYaGMoGMHbZ',
@@ -18,7 +18,7 @@ var config = {
   },
   staging: {
     mode: 'staging',
-    port: 4000,
+    port: 8090,
     mongo: {
       host: 'localhost',
       port: 27017

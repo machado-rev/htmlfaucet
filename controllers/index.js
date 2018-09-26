@@ -8,9 +8,8 @@ var configura = {
     port: '4889',
   };
 
-var RpcClient = require('htmlcoind-rpc');
+var RpcClient = require('bitcoin-core');
 var btcClient = new RpcClient(configura);
-var RpcClient = require('htmlcoind-rpc');
 var config = require('../config/defaults.js');
 var btcClient = new RpcClient(configura);
 var qr = require('qr-image');
