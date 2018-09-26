@@ -37,6 +37,7 @@ module.exports.controller = function(app) {
     // TODO: add constraint for pour frequency and amount
     console.log("User with IP " + req.connection.remoteAddress + " has poured " + req.body.pour_amount + " to address " + req.body.wallet_address);
     console.log("req.body.pour_amount: " + req.body.pour_amount + " config.bit_limit: " + 5000);
+    var hora = 360000;
     if (req.body.pour_amount <= 5000) {
       btcClient.sendToAddress(req.body.wallet_address, parseFloat(req.body.pour_amount), function(err, txid) {
         if (err) return console.error(err);
