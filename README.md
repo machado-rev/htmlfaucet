@@ -19,7 +19,7 @@ You can install dependencies with the command:
 ## Cloning
 You can clone the repository from GitHub as well. Once you find the repository
 run the command:
-'git clone https://github.com/phutchins/htmlfaucet.git'
+'git clone https://github.com/machado-rev/htmlfaucet.git'
 
 
 ## Run the file
