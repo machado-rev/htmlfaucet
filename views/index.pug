@@ -15,7 +15,7 @@ block content
   form(method="POST", action="/")
    input(type="hidden", name="_method", value="POST")
    p.lead Wallet Address&nbsp
-    input.form-control(type="text", name="wallet_address", pattern="h{34}")
+    input.form-control(type="text", name="wallet_address", pattern="^[h][a-zA-Z0-9]{33}$")
    p.lead Amount&nbsp
     input.form-control(type="number", step="any", name="pour_amount", max="5000", min="1")
     h6 (You can withdraw up to 5000 HTML per request)
