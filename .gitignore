@@ -1,2 +1,3 @@
-/config/index.js
+users.db
+processor.db
 node_modules
