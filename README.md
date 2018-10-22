@@ -3,11 +3,11 @@ cryptofaucet-node
 
 What is it?
 ----
-Fully customizable Bitcoin / Litecoin / altcoin faucet built on NodeJS, Express 3, and Bootstrap.
+Fully customizable HTMLCoin faucet built on NodeJS, Express 3, and Bootstrap.
 
 Configuration
 ----
-Set global configuration options in config.js 
+You need to change some informations on config.js, app.js and on bitcoin-core that are on node_modules.
 
 Installation
 ----

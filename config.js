@@ -56,16 +56,16 @@
 module.exports = {
 	'theme': "cerulean"
 	,'stylesheet': ""
-	,'title': "HTMLCOIN Testnet Faucet - Get free Htmlcoin every 12 hours!"
-	,'brand': "Htmlcoin Faucet"
+	,'title': "HTMLCOIN Testnet Faucet - Get free Htmlcoin every 10 minutes."
+	,'brand': "HTMLCoin Faucet"
 	,'copyright': '<a href="http://htmlcoin.com">HTML Foundation</a>'
-	,'coin': "Htmlcoin"
+	,'coin': "HTMLCoin"
 	,'symbol': "HTML"
 	,'pages':{
 		'home':{
-			'h1':"Htmlcoin (HTML) Faucet"
-			,'faucet_text':'This faucet automatically pays out Htmlcoin on a schedule. Enter your Htmlcoin address below to receive free HTML. <a href="https://althash.org">Need a wallet?</a>'
-			,'payout_header':'How works'
+			'h1':"HTMLCoin Faucet"
+			,'faucet_text':'This faucet automatically pays out HTMLCoin on a schedule. Enter your HTMLCoin address below to receive free testnet HTML. <a href="https://althash.org">Need a wallet?</a>'
+			,'payout_header':'How it works'
 		}
 	}
 	,'session_secret':"_secret_"
@@ -74,17 +74,17 @@ module.exports = {
 	, 'show_next_run': false
 	,'rpc':{
 		'host': "localhost"
-		,'port': port_number_here
+		,'port': your_rpc_port_Here
 		,'user': "your_rpc_user_here"
 		,'pass': "your_rpc_password_here"
 		,'timeout': 30000
 		,'ssl': false
 		,'sslStrict': false
-		,'account': 'faucet'
+		,'account': 'faucet' // account that will use on wallet (if you not put a label in the wallet the system will put to you)
 	}
 	,'faucet':{
 		'immediate': false
-		,'interval': 720 //720 = 12 hours
+		,'interval': 10 //720 = 12 hours
 		,'user_limit': 6
 		,'payout':[
 			500,

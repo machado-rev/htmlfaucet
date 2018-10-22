@@ -193,7 +193,7 @@ exports.submit = function(req, res){
 								_failure(req,res,'Failed to create record');
 							} else {
 								// Yay! User is now entered in the queue.
-								_success(req,res,'You are now entered!');
+								_success(req,res,'Coins requested! Please wait up to 10 minutes and check your balance.');
 							}
 						});
 					}
