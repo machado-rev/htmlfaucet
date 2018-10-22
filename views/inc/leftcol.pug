@@ -4,14 +4,11 @@ div.well
 
 		h4!= payout_header
 
-		p This faucet give free HTMLCOIN to testnet users, you can request free Testnet HTML every 12 hours!
-		p Minimal Chance: 15 HTML
-		p Maximum Chance: 1500 HTML
-		p <strong> Random values will be given.</strong>
-		
-		
-		p.interval= 'Payouts every 12 hours'
+		p This faucet gives free HTMLCoin to testnet users. You can make requests every 10 minutes.
+		p A random amount between 15 and 1500 HTML will be transferred to your wallet.
 
+		
+		
 			if show_next_run
 				p.next-run= 'Next payout: '+next_run
 
