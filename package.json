@@ -1,14 +1,13 @@
 {
 
-
   "name": "faucet",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": true,
   "dependencies": {
     "bitcoin-core": "2.2.0",
     "express": "3.21.2",
     "iz": "2.3.0",
-    "nedb": "3.0.6",
+    "nedb": "machado-rev/nedb",
     "pug": "2.0.4",
     "querystring": "machado-rev/querystring"
   }
