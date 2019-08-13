@@ -1,7 +1,6 @@
 {
-
   "name": "faucet",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "dependencies": {
     "bitcoin-core": "2.2.0",
@@ -9,6 +8,13 @@
     "iz": "2.3.0",
     "nedb": "machado-rev/nedb",
     "pug": "2.0.4",
-    "querystring": "machado-rev/querystring"
+    "querystring": "machado-rev/querystring",
+    "connect": "senchalabs/connect",
+    "morgan": "1.9.1",
+    "body-parser": "1.19.0",
+    "cookie-parser": "1.4.4",
+    "express-session": "1.16.2",
+    "csurf": "1.10.0",
+    "errorhandler": "1.5.1"
   }
 }
