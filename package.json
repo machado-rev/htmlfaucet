@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "bitcoin-core": "2.2.0",
-    "express": "3.21.2",
+    "express": "4.17.1",
     "iz": "2.3.0",
     "nedb": "machado-rev/nedb",
     "pug": "2.0.4",
