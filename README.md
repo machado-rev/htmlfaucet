@@ -1,9 +1,9 @@
-cryptofaucet-node
+HTMLCoin Faucet
 =================
 
 What is it?
 ----
-Fully customizable HTMLCoin faucet built on NodeJS, Express 3, and Bootstrap.
+Fully customizable HTMLCoin faucet built on NodeJS, Express 4 and Bootstrap.
 
 Configuration
 ----
