@@ -1,6 +1,6 @@
 {
-  "name": "faucet",
-  "version": "0.1.4",
+  "name": "htmlfaucet",
+  "version": "0.1.5",
   "private": true,
   "dependencies": {
     "bitcoin-core": "2.2.0",
