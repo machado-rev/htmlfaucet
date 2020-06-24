@@ -7,7 +7,7 @@
     "express": "4.17.1",
     "iz": "2.3.0",
     "nedb": "machado-rev/nedb",
-    "pug": "2.0.4",
+    "pug": "3.0.0",
     "querystring": "machado-rev/querystring",
     "connect": "senchalabs/connect",
     "morgan": "1.9.1",
